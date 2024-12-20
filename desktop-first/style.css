@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color-scheme: dark;
+    font-family: sans-serif;
+}
+
+a {
+    color: inherit;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid white;
+}
+
+.menu-bar {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+
+#hero {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 4rem;
+}
+
+.btn {
+    background-color: greenyellow;
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+/* a partir de 768 para abajo apliquemos el nuevo layout */
+
+@media (max-width: 768px) {
+    /* body {
+        background-color: red;
+    }
+
+    img {
+        display: none;
+    } */
+
+    /* header */
+
+    .menu-bar {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    header {
+        border: none;
+    }
+
+    .navbar {
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0;
+        left: 0%;
+        top: 50px;
+        width: 100%;
+        background: rgba( 255, 255, 255, 0 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+        /* -webkit-backdrop-filter: blur( 4px ); */
+        /* border-radius: 10px; */
+    }
+
+    /* hero */
+
+    #hero {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .info {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p {
+        text-align: center;
+        max-width: 50%;
+    }
+
+    
+}
+
+
+
+
+
+
